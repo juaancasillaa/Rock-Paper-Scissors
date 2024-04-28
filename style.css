@@ -1,0 +1,17 @@
+/* CSS styles for game elements */
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+#gameholder {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
