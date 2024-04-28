@@ -1,27 +1,16 @@
-// Selecting DOM elements using getElementById
-const playerText = document.getElementById("playerText");
-const computerText = document.getElementById("computerText");
-const resultText = document.getElementById("resultText");
-const rockButton = document.getElementById("rockButton");
-const paperButton = document.getElementById("paperButton");
-const scissorsButton = document.getElementById("scissorsButton");
+// Selecting DOM elements
+const playerText = document.querySelector("#playerText");
+const computerText = document.querySelector("#computerText");
+const resultText = document.querySelector("#resultText");
+const choiceInput = document.getElementById("choiceInput");
 
 // Variables to store player and computer choices, and game results
 let player;
 let computer;
-let results;
 
-// Event listeners for each choice button using getElementById
-rockButton.addEventListener("click", () => {
-    playGame("Rock");
-});
-
-paperButton.addEventListener("click", () => {
-    playGame("Paper");
-});
-
-scissorsButton.addEventListener("click", () => {
-    playGame("Scissors");
+// Event listener for the single input field
+choiceInput.addEventListener("change", () => {
+    playGame(choiceInput.value);
 });
 
 // Function to play the game
@@ -58,3 +47,4 @@ function checkWinner() {
         return (player === "Rock") ? "You win!" : "Computer wins!";
     }
 }
+

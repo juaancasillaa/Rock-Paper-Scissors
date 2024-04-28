@@ -15,3 +15,7 @@ body {
     text-align: center;
     width: 300px;
 }
+
+#choiceInput {
+    width: 265px;
+}
